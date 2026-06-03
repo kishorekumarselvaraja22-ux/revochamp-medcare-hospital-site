@@ -1,4 +1,4 @@
-// Generated on 2026-06-03 20:26:21.390
+// Generated on 2026-06-03 20:26:34.735
 // SEO Page Title: MedCare Hospital & Specialist Clinic
 // SEO Meta Description: Access highly qualified cardiologists, pediatricians, and general practitioners. Book your appointment online.
 import 'package:flutter/material.dart';
