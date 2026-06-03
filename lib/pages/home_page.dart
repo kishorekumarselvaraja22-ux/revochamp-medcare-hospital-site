@@ -1,34 +1,31 @@
 import 'package:flutter/material.dart';
 import '../theme/app_colors.dart';
-import '../theme/responsive.dart';
-import '../sections/header/view/header_section.dart';
-import '../sections/hero/view/hero_section.dart';
-import '../sections/services/view/services_section.dart';
-import '../sections/team/view/team_section.dart';
-import '../sections/contact/view/contact_section.dart';
-import '../sections/faq/view/faq_section.dart';
-import '../sections/footer/view/footer_section.dart';
+import '../sections/header_section.dart';
+import '../sections/hero_section.dart';
+import '../sections/services_section.dart';
+import '../sections/team_section.dart';
+import '../sections/contact_section.dart';
+import '../sections/faq_section.dart';
+import '../sections/footer_section.dart';
 
 class BuiltWebsiteHomePage extends StatelessWidget {
   const BuiltWebsiteHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final isMobile = Responsive.isMobile(context);
-    final isTablet = Responsive.isTablet(context);
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: AppColors.background,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            HeaderSection(isMobile: isMobile, isTablet: isTablet),
-            HeroSection(isMobile: isMobile, isTablet: isTablet),
-            ServicesSection(isMobile: isMobile, isTablet: isTablet),
-            TeamSection(isMobile: isMobile, isTablet: isTablet),
-            ContactSection(isMobile: isMobile, isTablet: isTablet),
-            FaqSection(isMobile: isMobile, isTablet: isTablet),
-            FooterSection(isMobile: isMobile, isTablet: isTablet),
+            HeaderSection(),
+            HeroSection(),
+            ServicesSection(),
+            TeamSection(),
+            ContactSection(),
+            FaqSection(),
+            FooterSection(),
           ],
         ),
       ),
